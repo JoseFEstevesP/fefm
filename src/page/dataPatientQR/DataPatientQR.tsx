@@ -20,7 +20,7 @@ const DataPatientQR = () => {
 	const { getData } = useGet();
 	const [dataPatient, setDataPatient] = useState<PatientDataBY_CI | null>(null);
 	const [loading, setLoading] = useState(false);
-
+	
 	const handleData = useCallback(async () => {
 		setLoading(true);
 		try {
@@ -39,6 +39,8 @@ const DataPatientQR = () => {
 		handleData();
 	}, []);
 
+	console.log("DataPatientQR -> dataPatient:", dataPatient)
+		console.log("DataPatientQR -> code:", code)
 	if (loading) {
 		return <div className='loading'>Cargando...</div>;
 	}
@@ -48,7 +50,7 @@ const DataPatientQR = () => {
 	}
 
 	return (
-		<section>
+		<>
 			{dataPatient && (
 				<>
 					<SectionDataPatient data={patientDataUser(dataPatient)} />
@@ -65,7 +67,7 @@ const DataPatientQR = () => {
 					)}
 				</>
 			)}
-		</section>
+		</>
 	);
 };
 export default DataPatientQR;
