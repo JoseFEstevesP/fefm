@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import { Icons } from './components/icon/Icons';
 import Msg from './components/msg/Msg';
 import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes';
 import { MsgProvider } from './context/msg/MsgContext';
@@ -10,7 +11,6 @@ import { Home } from './page/home/Home';
 import RecoveryPassword from './page/recovery/RecoveryPassword';
 import { RegisterUser } from './page/registerUserDefault/RegisterUser';
 import UserValOptions from './page/userValOptions/UserValOptions';
-import { Icons } from './components/icon/Icons';
 
 function App() {
 	return (
@@ -24,10 +24,10 @@ function App() {
 								<Route path='/' element={<Home />} />
 								<Route path='/recovery' element={<RecoveryPassword />} />
 								<Route path='/registerUser' element={<RegisterUser />} />
-								<Route path='/data/:code' element={<DataPatientQR />} />
 								<Route element={<ProtectedRoutes />}>
 									<Route path='/options/*' element={<UserValOptions />} />
 								</Route>
+								<Route path='/data/:code' element={<DataPatientQR />} />
 							</Routes>
 							<Msg />
 						</>
