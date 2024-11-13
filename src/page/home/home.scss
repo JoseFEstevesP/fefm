@@ -1,0 +1,21 @@
+.home {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 'login';
+	grid-template-rows: 1fr;
+	justify-items: center;
+	align-items: center;
+	gap: 1em;
+
+	&__cintillo {
+		width: 100%;
+		height: 6em;
+		grid-area: cintillo;
+	}
+
+	&__login {
+		grid-area: login;
+		height: auto;
+	}
+}

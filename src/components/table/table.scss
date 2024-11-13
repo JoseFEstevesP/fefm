@@ -1,0 +1,18 @@
+.table {
+	&__btn {
+		--size: 30px;
+		width: var(--size);
+		height: var(--size);
+		border-radius: 100%;
+		box-shadow: var(--shadow);
+		padding: 5px;
+	}
+	&__icon {
+		--size: 20px;
+		width: var(--size);
+		height: var(--size);
+	}
+}
+.MuiTableCell-root {
+	text-align: center;
+}

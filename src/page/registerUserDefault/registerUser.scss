@@ -1,0 +1,25 @@
+.registerUser {
+	width: 100%;
+	min-height: inherit;
+	display: grid;
+	grid-template-areas: 'cintillo' 'logo' 'form';
+	grid-template-rows: auto auto 1fr;
+	justify-items: center;
+	align-items: center;
+	gap: 1em;
+
+	&__cintillo {
+		grid-area: cintillo;
+		height: 6em;
+	}
+
+	&__logo {
+		grid-area: logo;
+		height: 3em;
+	}
+
+	&__login {
+		grid-area: form;
+		height: auto;
+	}
+}

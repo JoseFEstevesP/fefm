@@ -1,0 +1,30 @@
+.msg {
+	height: 40px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background-color: var(--secondary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	border-radius: var(--border-radius);
+	padding: 1em;
+	border: 2px solid var(--primary-color);
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity 0.5s,
+		visibility 0.5s;
+
+	&--show {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(-1em) translateY(-1em);
+	}
+
+	&__btn {
+		width: 30px;
+		height: 30px;
+	}
+}

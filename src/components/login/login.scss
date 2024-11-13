@@ -1,0 +1,57 @@
+.login {
+	width: 18.75em;
+	min-height: 16em;
+	padding: 50px 1em 1em 1em;
+	filter: drop-shadow(var(--shadow));
+	font-size: 1rem;
+	position: relative;
+
+	&__logo {
+		width: 5.625em;
+		height: 5.625em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		background-color: var(--secondary-color);
+		border-radius: 100%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-100%);
+	}
+
+	&__userIcon {
+		width: 4em;
+		height: 4em;
+	}
+
+	&__error {
+		margin: 1em;
+		text-align: center;
+		color: var(--accent-color);
+	}
+
+	&__form {
+		display: grid;
+		place-items: center;
+		gap: 1em;
+	}
+
+	&__links {
+		width: 100%;
+		font-weight: bold;
+		color: var(--primary-color);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__btn {
+		@media screen and (min-width: 768px) {
+			width: auto;
+		}
+	}
+
+	&__input {
+		width: 100%;
+	}
+}

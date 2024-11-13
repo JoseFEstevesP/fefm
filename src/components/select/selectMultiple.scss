@@ -1,0 +1,125 @@
+.select {
+	font-size: 1rem;
+	width: 100%;
+	max-width: 16.875em;
+	height: 100%;
+	position: relative;
+
+	&__label {
+		position: absolute;
+		top: -0.5em;
+		left: 0.625em;
+		color: var(--accent-color);
+		font-size: 1.25em;
+	}
+
+	&__contentValue {
+		width: 100%;
+		height: 3.125em;
+		border: 0.0625em solid var(--color-gray);
+		border-radius: 0.3125em;
+		padding: 0.9375em 0.625em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		transition: border 0.3s;
+		&--error {
+			border: 0.0625em solid var(--accent-color);
+			&:focus {
+				outline: 0.0938em solid var(--accent-color);
+			}
+		}
+	}
+
+	&__value {
+		width: calc(100% - 1.25em);
+		padding: 0.3125em 0.3125em 0.3125em 0;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		text-align: start;
+		&--placeholder {
+			color: var(--color-gray);
+		}
+	}
+
+	&__contentIcon {
+		width: 1em;
+		height: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__icon {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__iconSelect {
+		width: 100%;
+		height: 100%;
+		rotate: 90deg;
+		transition: rotate 0.3s;
+
+		&--active {
+			rotate: 270deg;
+		}
+	}
+
+	&__contentData {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 0.5em;
+		margin-top: 0.3125em;
+		background-color: var(--secondary-color);
+		border: 0.0625em solid var(--color-gray);
+		border-radius: 0.3125em;
+	}
+
+	&__search {
+		width: 100%;
+		height: 2.5em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 0.0625em solid var(--color-gray);
+		padding: 0.9375em 0.625em 0.9375em 0;
+		margin: 0 auto;
+	}
+
+	&__searchInput {
+		width: calc(100% - 1.25em);
+		height: 2.5em;
+		border: 0;
+		padding-left: 0.625em;
+	}
+
+	&__contentMenu {
+		width: 100%;
+		max-height: 9.375em;
+		overflow-y: auto;
+		padding: 0;
+		margin: 0;
+		padding: 0px 0.625em;
+	}
+
+	&__menuOptions {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__error {
+		font-size: 0.75em;
+		color: var(--accent-color);
+		font-weight: 400;
+		padding: 0;
+		margin-left: 0.875em;
+		margin-right: 0.875em;
+	}
+}

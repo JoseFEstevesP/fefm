@@ -1,0 +1,69 @@
+.formRegisterUser {
+	width: 18.75em;
+	min-height: 16em;
+	padding: 1em;
+	font-size: 1rem;
+	position: relative;
+	@media screen and (min-width: 768px) {
+		width: auto;
+	}
+
+	&__iconUser {
+		filter: drop-shadow(var(--shadow));
+		padding-top: 3.125rem;
+		margin-top: 3.125em;
+	}
+
+	&__logo {
+		width: 5.625em;
+		height: 5.625em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		background-color: var(--secondary-color);
+		border-radius: 100%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-100%);
+	}
+
+	&__userIcon {
+		width: 4em;
+	}
+
+	&__form {
+		display: grid;
+		place-items: center;
+		gap: 1em;
+		@media screen and (min-width: 768px) {
+			grid-template-columns: repeat(2, 16.75em);
+			grid-template-rows: repeat(2, auto);
+		}
+	}
+
+	&__btn {
+		@media screen and (min-width: 768px) {
+			grid-column: span 2;
+			width: auto;
+		}
+	}
+
+	&__links {
+		width: 100%;
+		font-weight: bold;
+		color: var(--primary-color);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__error {
+		margin: 1em;
+		text-align: center;
+		color: var(--accent-color);
+	}
+
+	&__input {
+		width: 100%;
+	}
+}

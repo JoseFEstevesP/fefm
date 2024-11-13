@@ -1,0 +1,35 @@
+:root {
+	--primary-color: #0078d4; /* Blue */
+	--secondary-color: #fdfdfd; /* Very light gray */
+	--border-color: rgba(0, 0, 0, 0.5); /* Black */
+	--text-color: #181818; /* Black */
+	--modal-color: #18181880; /* Black */
+	--accent-color: #d82a3c; /* Red */
+	--color-yellow: #f5eb13; /* Yellow */
+	--color-gray: #656565; /* Gray */
+	--color-green: #12bd4c; /* Green */
+	--color-blue-dark-blue: #09415f; /* Dark blue */
+	--color-gradient-blue: #47b6e9 6%, #1282bd 49%, #0f6495 100%; /* blue gradient */
+	--color-gradient-red: #d82b3d 50% #fef2f2 100%; /* red gradient */
+	--shadow: 0 0.25em 0.9375em rgba(24, 24, 24, 0.25); /* shadow */
+	--border-radius: 0.625em;
+
+	// =================
+	--color: #fdfdfd;
+	--color-lighter: color-mix(in srgb, var(--color), white 75%);
+	--color-light: color-mix(in srgb, var(--color), white);
+	--color-dark: color-mix(in srgb, var(--color), black 25%);
+	--color-darker: color-mix(in srgb, var(--color), black);
+	--color-gradient: var(--color-lighter) 6%, var(--color-light) 49%,
+		var(--color-dark) 100%;
+}
+
+#root {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.box {
+	background-color: var(--secondary-color);
+	border-radius: var(--border-radius);
+}

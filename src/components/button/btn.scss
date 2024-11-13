@@ -1,0 +1,40 @@
+.btn {
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+	border: 0;
+	width: clamp(auto, 100%, 20em);
+	height: 2.5em;
+	border-radius: 1.25em;
+	padding: 0.375em 1em;
+	font-weight: 500;
+
+	&--form {
+		background-color: var(--primary-color);
+		box-shadow: var(--shadow);
+	}
+
+	&--card {
+		background-color: var(--primary-color);
+		box-shadow: var(--shadow);
+	}
+
+	&--disable {
+		background-color: var(--color-gray);
+	}
+
+	&--section {
+		--bg: var(--primary-color);
+		--w: 100%;
+		width: var(--w);
+		background-color: var(--bg);
+		box-shadow: var(--shadow);
+	}
+
+	&__icon {
+		width: 1.25em;
+		height: 1.25em;
+	}
+}

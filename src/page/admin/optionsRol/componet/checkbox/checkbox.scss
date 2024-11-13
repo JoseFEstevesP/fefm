@@ -1,0 +1,26 @@
+.check {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	font-size: 1rem;
+	cursor: pointer;
+
+	& > &__input:checked ~ &__icon {
+		background-color: var(--primary-color);
+	}
+
+	&__input {
+		display: none;
+	}
+
+	&__icon {
+		width: 1.3em;
+		height: 1.3em;
+		position: relative;
+		background-color: var(--text-color);
+		border-radius: 100%;
+		box-shadow: var(--shadow);
+		transition: background-color 0.5s;
+	}
+}

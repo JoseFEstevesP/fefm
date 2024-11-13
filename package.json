@@ -1,0 +1,52 @@
+{
+	"name": "fron-end-farmapatria-medicamento",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"preview": "vite preview",
+		"lint": "eslint . --fix",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@emotion/react": "11.13.3",
+		"@emotion/styled": "11.13.0",
+		"@formkit/tempo": "0.1.2",
+		"@hookform/resolvers": "3.9.0",
+		"@mui/icons-material": "6.1.4",
+		"@mui/material": "6.1.4",
+		"@types/node": "22.7.7",
+		"axios": "1.7.7",
+		"react": "18.3.1",
+		"react-dom": "18.3.1",
+		"react-hook-form": "7.53.1",
+		"react-qr-code": "2.0.15",
+		"react-router-dom": "6.27.0",
+		"sass": "1.77.6",
+		"zod": "3.23.8"
+	},
+	"devDependencies": {
+		"@nabla/vite-plugin-eslint": "2.0.4",
+		"@types/react": "18.3.11",
+		"@types/react-dom": "18.3.1",
+		"@typescript-eslint/eslint-plugin": "8.10.0",
+		"@typescript-eslint/parser": "8.10.0",
+		"@vitejs/plugin-react-swc": "3.7.1",
+		"autoprefixer": "10.4.20",
+		"eslint": "9.13.0",
+		"eslint-config-prettier": "9.1.0",
+		"eslint-plugin-prettier": "5.2.1",
+		"eslint-plugin-react": "7.37.1",
+		"eslint-plugin-react-hooks": "5.0.0",
+		"postcss": "8.4.47",
+		"postcss-cli": "11.0.0",
+		"prettier": "3.3.3",
+		"stylelint": "16.10.0",
+		"stylelint-config-standard": "36.0.1",
+		"typescript": "5.6.3",
+		"vite": "5.4.9",
+		"vite-plugin-eslint": "1.8.1"
+	}
+}
