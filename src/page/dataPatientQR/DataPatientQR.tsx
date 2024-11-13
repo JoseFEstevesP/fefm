@@ -39,9 +39,16 @@ const DataPatientQR = () => {
 		handleData();
 	}, []);
 
+	if (loading) {
+		return <div className='loading'>Cargando...</div>;
+	}
+
+	if (!dataPatient) {
+		return <div className='loading'>No se encontraron datos</div>;
+	}
+
 	return (
-		<>
-			{loading && <div className='loading'>Cargando...</div>}
+		<section>
 			{dataPatient && (
 				<>
 					<SectionDataPatient data={patientDataUser(dataPatient)} />
@@ -58,7 +65,7 @@ const DataPatientQR = () => {
 					)}
 				</>
 			)}
-		</>
+		</section>
 	);
 };
 export default DataPatientQR;
